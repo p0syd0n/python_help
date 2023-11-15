@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Basic Python Code Examples</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="PythonLogo.png">
+</head>
+
+<script src="script.js"></script>
+
+<body onload="on_load()">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <hr size="5" noshade color="#ffffff">
+    <a href="#PrintStatement">Print Statement</a>
+    <a href="#Variables">Variables</a>
+    <a href="#InputStatements">Input Statements</a>
+    <a href="#IfThenStatements">If Then Statements</a>
+    <a href="#ElseStatement">Else Statement</a>
+    <a href="#ElifStatement">Elif Statement</a>
+    <a href="#DataTypes">Data Types</a>
+    <a href="#Functions">Functions</a>
+    <a href="#Imports">Importing Modules</a>
+    <a href="#Math">Math</a>
+    <a href="#WhileLoop">While Loops</a>
+    <a href="#ListsArrays">Lists / Arrays</a>
+    <a href="#ForLoop">For Loops</a>
+    <a href="#TupleDictionaries">Tuples / Dictionaries</a>
+    <a href="#OtherPages">Other Pages</a>
+    <hr size="5" noshade color="#ffffff">
+    <a href="https://basic-python-code-examples.itemply.repl.co">Main Page</a>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <center>
+    <br><br><br>
+    <p></p>
+    <hr size="5" noshade color="#ffffff">
+    <h1 class='headertext'>Basic Python Code Examples</h1>
+    <hr size="5" noshade color="#ffffff">
+  </center>
+  <div class='topbar'>
+    <span style="cursor:pointer" onclick="openNav()" class="opennav">&#9776;</span>
+    <p class='topbartext' id='rmt'></p>
+  </div>
+  <center>
+    <p class='normaltext'>These are some examples of Python that you can use for coding in your projects. You may refer
+      back to this at any time during your coding but I highly suggest you make a genuine attempt to not as that is the
+      learning process.</p>
+    <hr size="5" noshade color="#ffffff">
+    <div>
+      <h1 class='subheadertext' id="PrintStatement">Print Statement</h1>
+      <p class='normaltext'>A print statement allows you to print strings, number values, or any combination you can
+        think of. The code below is an example of a print statement.</p>
+      <p class='codetext'>print("Hello, World!")<br><br><i>// Expected Console Output</i><br><br>>> Hello, World!</p>
+      <hr size="5" noshade color="#ffffff" id="Variables">
+    </div>
+    <div>
+      <h1 class='subheadertext'>Variables</h1>
+      <p class='normaltext'>Variables allow you to assign values to certain names. For example, you can set the letter
+        "I" to the value of 19. When you try to print that value it would return 23.</p>
+      <p class='codetext'>I = 23<br>StringValue = "Hello, this is a string
+        value."<br><br>print(I)<br>print(StringValue)<br><br><i>// Expected Console Output</i><br><br>>> 23<br>>> Hello,
+        this is a string value.</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class='subheadertext' id="InputStatements">Input Statements</h1>
+      <p class='normaltext'>Input statements allow you to collect data from the user in the console. This data can then
+        be used in many different ways. The input can be set to string so you know what you are inputting.</p>
+      <p class='codetext'>InputText = input("Input Number: ")<br><br>print(InputText)<br><br><i>// Expected Console
+          Output</i><br><br>>> 25 <i>(The number or letter here will be the one you inputted.)</i></p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class='subheadertext' id="IfThenStatements">If Then Statements</h1>
+      <p class='normaltext'>If Then statements allow you to see if a value is equal, greater, less than, and so much
+        more to another value. These allow you to make complex systems that use inputted values to work.</p>
+      <p class='codetext'>NumberA = input("Input Number A: ")<br>NumberB = input("Input Number B: ")<br><br>if NumberA
+        == NumberB:<br><span class='tab'></span>print("The numbers are equal!")<br><br><i>// Expected Console
+          Output</i><br><br>>> The numbers are equal! <i>(If the numbers are equal.)</i><br>>><i> (If the numbers are
+          not equal it prints out nothing.)</i></p>
+      <p class='smalltext'>A list of all supported if then statement conditions. <br><br>Equals: a == b<br>Not Equals: a
+        != b<br>Less than: a &#60; b<br>Less than or equal to: a <= b<br>Greater than: a > b<br>Greater than or equal
+          to: a >= b</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class='subheadertext' id="ElseStatement">Else Statement</h1>
+      <p class='normaltext'>The else statement works with the If Then statements. It detects when the if then returns
+        false and runs that option instead of the option if the if then returned true.</p>
+      <p class='codetext'>NumberA = input("Input Number A: ")<br>NumberB = input("Input Number B: ")<br><br>if NumberA
+        == NumberB:<br><span class='tab'></span>print("The numbers are equal!")<br>else:<br><span
+          class='tab'></span>print("The numbers are not equal!")<br><br><i>// Expected Console Output</i><br><br>>> The
+        numbers are equal! <i>(If the numbers are equal.)</i><br>>> The numbers are not equal! <i>(If the numbers are
+          not equal.)</i></p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class='subheadertext' id="ElifStatement">Elif Statement</h1>
+      <p class='normaltext'>The elif statement works with the If Then statements. It detects when the if then returns
+        false and tries this option to see if it is true.</p>
+      <p class='codetext'>NumberA = input("Input Number A: ")<br>NumberB = input("Input Number B: ")<br><br>if NumberA
+        == NumberB:<br><span class='tab'></span>print("The numbers are equal!")<br>elif NumberA > NumberB:<br><span
+          class='tab'></span>print("Number A is greater than number B!")<br>else:<br><span class='tab'></span>print("the
+        numbers are not equal.")<br><br><i>// Expected Console Output</i><br><br>>> The numbers are equal! <i>(If the
+          numbers are equal.)</i><br>>> Number A is greater than number B! <i>(If number A is greater than number
+          B.)</i><br>>> The numbers are not equal! <i>(If the numbers are not equal.)</i></p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class="subheadertext" id="DataTypes">Data Types</h1>
+      <p class="normaltext">There are three main types of data. They are string, integer, and float. Strings are seen as
+        a list of characters. They have no mathematic or numeric value, and when typed, must be help in quotation marks.
+        They can be stored in variables. Whenever you take input from a user, or store data in quotation marks, it is
+        read as a string. The next type of data is an integer. An integer is exactly that, and integer. It cannot be a
+        decimal, and has a numeric and mathmatic value. The last main data type is a float. It the same as an integer,
+        but it can be a decimal. When printed, it will have a ".0" if it is a whole number.</p>
+      <p class='codetext'>X = "This is a string."<br><br>X = 12<br><br>X = 1.2</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class="subheadertext" id="Functions">Functions</h1>
+      <p class="normaltext">Functions are sections of code that you have stored in a function to be called ans used
+        later. These can be used before the function is created or after it is created.</p>
+      <p class="codetext">def myFunction():<br><span class='tab'></span>print("Hello
+        World")<br><br>myFunction()<br><br><i>// Expected Console Output</i><br><br>>> Hello World<br></p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class="subheadertext" id="Imports">Importing Modules</h1>
+      <p class="normaltext">Modules are functions that someone else has coded. You can use "import" and then the name of
+        the module to import these.</p>
+      <p class="codetext">import math<br><br>print(math.pi)</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class='subheadertext' id="Math">Math</h1>
+      <p class='normaltext'>Math in python can be used in countless number of ways. Math in python mostly works like
+        real world math. 1+1=2 or 5*3=15. Some things are different thought. To do exponents you do ** or to get Pi you
+        would so math.pi. To get any of the math.something stuff you need to import the math module. Once you have that
+        you can do even harder equations than just adding or subtracting.</p>
+      <p class='codetext'>import math<br><br>pi = math.pi<br>answer = 3 +
+        4<br><br>print(pi)<br>print(answer)<br><br><i>// Expected Console Output</i><br><br>>> 3.14... (Then the rest of
+        Pi.)<br>>> 7</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class='subheadertext' id="WhileLoop">While Loops</h1>
+      <p class='normaltext'>While loops will continuously repeat the same code over and over again until the condition
+        is false or is broken. When stopped, the code will stop executing and will continue on with the rest of the
+        script. </p>
+      <p class='codetext'>x = 1<br><br>while x > 0:<br><span class='tab'></span>print(x)<br><span class='tab'></span>x =
+        x + 1<br><br><i>// Expected Console Output</i><br><br>>> 1<br>>> 2<br>>> 3 <i>(This repeats forever or until the
+          statement is stopped.)</i></p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class="subheadertext" id="ListsArrays">Lists/Arrays</h1>
+      <p class="normaltext">Lists are basically variables that hold more than one item. There are a variety of functions
+        that can be done with lists, inlcuding index( ), pop( ), append( ) and delete( ). These are only some of the
+        functions and we can not explain them here. Google them for more information. A list is indexed so that every
+        element in it has a value. The first value is 0, the second is 1, and so on.</p>
+      <p class="codetext">myList = ['item1', 'item2', 'item3']<br><br>print(myList[0])<br><br><i>// Expected Console
+          Output</i><br><br>>> item1</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class="subheadertext" id="ForLoop">For Loops</h1>
+      <p class="normaltext">For loops iterate through a list. They will read the value in a list, asign that value to a
+        variable, and then continue. For loops can also loop through things an X number of times and can also loop
+        through all the characters in a string.</p>
+      <p class='codetext'>pets = ['cats', dogs, 'fish']<br><br>for x in pets:<br><span
+          class='tab'></span>print(x)<br><br><i>// Expected Console Output</i><br><br>>> cats<br>>> dogs<br>>> fish</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class="subheadertext" id="TupleDictionaries">Tuples and Dictionaries</h1>
+      <p class="normaltext">Tuples and Dictionaries are similar to variables. Tuples are sets of numbers or letters
+        seperated by commas. They can not be altered through user input, only completely redefined in to code. This
+        could be used to define a status, and then use and if statement to redefine that status. A dictionary is a set
+        of key:value pairs. You can print or use the value by calling the key. An example will be shown below.</p>
+      <p class="codetext">myTuple = 101, 2.46, 'string'<br><br>myDict = {'key1' : 'value1', 'key2' :
+        'value2'}<br><br>print(myDict['key1'])<br><br><i>// Expected Console Output</i><br><br>>> value1</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class="subheadertext" id="OtherPages">Other Pages</h1>
+      <a href="imports.html" class='smalltext'>Commomly Used Modules to Import</a>
+      <br>
+      <br>
+      <a href="PEP8.html" class="smalltext">PEP 8</a>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <p class='smalltext'>Basic Python Code Examples</p>
+    <p class='smalltext'>ITemply | OnyxDev1234</p>
+    <hr size="5" noshade color="#ffffff">
+    <br>
+  </center>
+</body>
+
+</html>
