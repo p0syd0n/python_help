@@ -12,13 +12,11 @@
 <script src="script.js"></script>
 <body onload="on_load()">
   <div id="mySidenav" class="sidenav">
-    <img src='PythonLogo.png' alt="Python Logo" width=50% height=100%>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Home</a>
-    <hr size="5" noshade color="#ffffff">
-    <a href="#">Example Import</a>
+    <a href="#">Commonly Imported Modules</a>
     <hr size="5" noshade color="#ffffff">
     <a href="https://basic-python-code-examples.itemply.repl.co">Main Page</a>
+    <a href="#WhatisAModule">What is a Module</a>
     <br>
     <br>
     <br>
@@ -28,6 +26,33 @@
     <span style="cursor:pointer" onclick="openNav()" class="opennav">&#9776;</span>
     <p class='topbartext' id='rmt'></p>
   </div>
+
+  <center>
+    <br><br><br>
+    <p></p>
+    <hr size="5" noshade color="#ffffff">
+    <h1 class='headertext'>Commonly Imported Modules</h1>
+    <hr size="5" noshade color="#ffffff">
+  </center>
+  <div class='topbar'>
+    <span style="cursor:pointer" onclick="openNav()" class="opennav">&#9776;</span>
+    <p class='topbartext' id='rmt'></p>
+  </div>
+  <center>
+    <p class='normaltext'>These are some examples of common modules that Python programmers use. Modules can be used for many things, from doing more complicated math to running servers to generating random numbers.</p>
+    <hr size="5" noshade color="#ffffff">
+    <div>
+      <h1 class='subheadertext' id="WhatisAModule">What is a Module</h1>
+      <p class='normaltext'>A module is a chunk of code that someone else made. You can import it, and then use funtions and data that someone else created for yourself. This makes it easier to do things, so that you do do not need to code every little detail yourself.</p>
+      <p class='codetext'>import random<br>from random import *<br><br>print(random())<br><br>//Expected Console Output<br><br></i>>> 0.91837452</p>
+      <hr size="5" noshade color="#ffffff" id="Random">
+    </div>
+    <div>
+      <h1 class='subheadertext'>The Random Module</h1>
+      <p class='normaltext'>This module has many different methods. They mostly serve the purpose of generating random numbers, sometimes with parameters you input, others with pre set parameters. We will have subsection below this that explain the methods found in this module.</p>
+      <hr size="5" noshade color="#ffffff" id="Random-Seed()">
+      <h1 class='subsubheadertext'>Random<br>Seed()</h1>
+    </div>
 </body>
 
 </html>

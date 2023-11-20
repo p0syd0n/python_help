@@ -21,6 +21,14 @@ html, body {
   width: 90%;
 }
 
+.subsubheadertext {
+  color: #ffffff;
+  font-family:'Arial';
+  font-size: 40px;
+  font-weight: 500;
+  width: 90%;
+}
+
 .normaltext {
   color: #ffffff;
   font-family:'Arial';

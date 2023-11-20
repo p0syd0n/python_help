@@ -1,5 +1,5 @@
 const fs = require('fs');
-//penis
+
 function reportbug() {
   var data = document.getElementById('reportticket').value
   var prevdata = ''
@@ -34,10 +34,10 @@ function on_load() {
   } else if (randomnum == 7) {
     document.getElementById("rmt").innerHTML = 'Python is excellent!'
   } else if (randomnum == 8) {
-    document.getElementById("rmt").innerHTML = 'Lua is the best language.'
+    document.getElementById("rmt").innerHTML = 'Lua is a cool language.'
   } else if (randomnum == 9) {
     document.getElementById("rmt").innerHTML = 'JavaScript is fun to learn!'
   } else if (randomnum == 10) {
-    document.getElementById("rmt").innerHTML = 'Created by ITemply and OnyxDev1234!'
+    document.getElementById("rmt").innerHTML = 'Created by ITemply, Posydon and OnyxDev1234!'
   }
 }

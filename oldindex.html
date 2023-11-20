@@ -16,20 +16,20 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">Home</a>
     <hr size="5" noshade color="#ffffff">
-    <a href="#DataTypes">Data Types</a>
-    <a href="#Variables">Variables</a>
     <a href="#PrintStatement">Print Statement</a>
+    <a href="#Variables">Variables</a>
     <a href="#InputStatements">Input Statements</a>
     <a href="#IfThenStatements">If Then Statements</a>
     <a href="#ElseStatement">Else Statement</a>
     <a href="#ElifStatement">Elif Statement</a>
+    <a href="#DataTypes">Data Types</a>
+    <a href="#Functions">Functions</a>
+    <a href="#Imports">Importing Modules</a>
+    <a href="#Math">Math</a>
     <a href="#WhileLoop">While Loops</a>
     <a href="#ListsArrays">Lists / Arrays</a>
     <a href="#ForLoop">For Loops</a>
     <a href="#TupleDictionaries">Tuples / Dictionaries</a>
-    <a href="#Functions">Functions</a>
-    <a href="#Imports">Importing Modules</a>
-    <a href="#Math">Math</a>
     <a href="#OtherPages">Other Pages</a>
     <hr size="5" noshade color="#ffffff">
     <a href="https://basic-python-code-examples.itemply.repl.co">Main Page</a>
@@ -56,15 +56,11 @@
       learning process.</p>
     <hr size="5" noshade color="#ffffff">
     <div>
-      <h1 class="subheadertext" id="DataTypes">Data Types</h1>
-      <p class="normaltext">There are three main types of data. They are string, integer, and float. Strings are seen as
-        a list of characters. They have no mathematic or numeric value, and when typed, must be help in quotation marks.
-        They can be stored in variables. Whenever you take input from a user, or store data in quotation marks, it is
-        read as a string. The next type of data is an integer. An integer is exactly that, and integer. It cannot be a
-        decimal, and has a numeric and mathmatic value. The last main data type is a float. It the same as an integer,
-        but it can be a decimal. When printed, it will have a ".0" if it is a whole number.</p>
-      <p class='codetext'>X = "This is a string."<br><br>X = 12<br><br>X = 1.2</p>
-      <hr size="5" noshade color="#ffffff">
+      <h1 class='subheadertext' id="PrintStatement">Print Statement</h1>
+      <p class='normaltext'>A print statement allows you to print strings, number values, or any combination you can
+        think of. The code below is an example of a print statement.</p>
+      <p class='codetext'>print("Hello, World!")<br><br><i># Expected Console Output</i><br><br>>> Hello, World!</p>
+      <hr size="5" noshade color="#ffffff" id="Variables">
     </div>
     <div>
       <h1 class='subheadertext'>Variables</h1>
@@ -74,13 +70,6 @@
         value."<br><br>print(I)<br>print(StringValue)<br><br><i># Expected Console Output</i><br><br>>> 23<br>>> Hello,
         this is a string value.</p>
       <hr size="5" noshade color="#ffffff">
-    </div>
-    <div>
-      <h1 class='subheadertext' id="PrintStatement">Print Statement</h1>
-      <p class='normaltext'>A print statement allows you to print strings, number values, or any combination you can
-        think of. The code below is an example of a print statement.</p>
-      <p class='codetext'>print("Hello, World!")<br><br><i># Expected Console Output</i><br><br>>> Hello, World!</p>
-      <hr size="5" noshade color="#ffffff" id="Variables">
     </div>
     <div>
       <h1 class='subheadertext' id="InputStatements">Input Statements</h1>
@@ -127,6 +116,43 @@
       <hr size="5" noshade color="#ffffff">
     </div>
     <div>
+      <h1 class="subheadertext" id="DataTypes">Data Types</h1>
+      <p class="normaltext">There are three main types of data. They are string, integer, and float. Strings are seen as
+        a list of characters. They have no mathematic or numeric value, and when typed, must be help in quotation marks.
+        They can be stored in variables. Whenever you take input from a user, or store data in quotation marks, it is
+        read as a string. The next type of data is an integer. An integer is exactly that, and integer. It cannot be a
+        decimal, and has a numeric and mathmatic value. The last main data type is a float. It the same as an integer,
+        but it can be a decimal. When printed, it will have a ".0" if it is a whole number.</p>
+      <p class='codetext'>X = "This is a string."<br><br>X = 12<br><br>X = 1.2</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class="subheadertext" id="Functions">Functions</h1>
+      <p class="normaltext">Functions are sections of code that you have stored in a function to be called ans used
+        later. These can be used before the function is created or after it is created.</p>
+      <p class="codetext">def myFunction():<br><span class='tab'></span>print("Hello
+        World")<br><br>myFunction()<br><br><i># Expected Console Output</i><br><br>>> Hello World<br></p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class="subheadertext" id="Imports">Importing Modules</h1>
+      <p class="normaltext">Modules are functions that someone else has coded. You can use "import" and then the name of
+        the module to import these. We have another page you can find at the bottom of this one with more information on modules and how to use them. Below we have included an example of the math module.</p>
+      <p class="codetext">import math<br><br>print(math.pi)</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
+      <h1 class='subheadertext' id="Math">Math</h1>
+      <p class='normaltext'>Math in python can be used in countless number of ways. Math in python mostly works like
+        real world math. 1+1=2 or 5*3=15. Some things are different thought. To do exponents you do ** or to get Pi you
+        would so math.pi. To get any of the math.something stuff you need to import the math module. Once you have that
+        you can do even harder equations than just adding or subtracting.</p>
+      <p class='codetext'>import math<br><br>pi = math.pi<br>answer = 3 +
+        4<br><br>print(pi)<br>print(answer)<br><br><i># Expected Console Output</i><br><br>>> 3.14... (Then the rest of
+        Pi.)<br>>> 7</p>
+      <hr size="5" noshade color="#ffffff">
+    </div>
+    <div>
       <h1 class='subheadertext' id="WhileLoop">While Loops</h1>
       <p class='normaltext'>While loops will continuously repeat the same code over and over again until the condition
         is false or is broken. When stopped, the code will stop executing and will continue on with the rest of the
@@ -163,32 +189,6 @@
         of key:value pairs. You can print or use the value by calling the key. An example will be shown below.</p>
       <p class="codetext">myTuple = 101, 2.46, 'string'<br><br>myDict = {'key1' : 'value1', 'key2' :
         'value2'}<br><br>print(myDict['key1'])<br><br><i># Expected Console Output</i><br><br>>> value1</p>
-      <hr size="5" noshade color="#ffffff">
-    </div>
-    <div>
-      <h1 class="subheadertext" id="Functions">Functions</h1>
-      <p class="normaltext">Functions are sections of code that you have stored in a function to be called ans used
-        later. These can be used before the function is created or after it is created.</p>
-      <p class="codetext">def myFunction():<br><span class='tab'></span>print("Hello
-        World")<br><br>myFunction()<br><br><i># Expected Console Output</i><br><br>>> Hello World<br></p>
-      <hr size="5" noshade color="#ffffff">
-    </div>
-    <div>
-      <h1 class="subheadertext" id="Imports">Importing Modules</h1>
-      <p class="normaltext">Modules are functions that someone else has coded. You can use "import" and then the name of
-        the module to import these. We have another page you can find at the bottom of this one with more information on modules and how to use them. Below we have included an example of the math module.</p>
-      <p class="codetext">import math<br><br>print(math.pi)</p>
-      <hr size="5" noshade color="#ffffff">
-    </div>
-    <div>
-      <h1 class='subheadertext' id="Math">Math</h1>
-      <p class='normaltext'>Math in python can be used in countless number of ways. Math in python mostly works like
-        real world math. 1+1=2 or 5*3=15. Some things are different thought. To do exponents you do ** or to get Pi you
-        would so math.pi. To get any of the math.something stuff you need to import the math module. Once you have that
-        you can do even harder equations than just adding or subtracting.</p>
-      <p class='codetext'>import math<br><br>pi = math.pi<br>answer = 3 +
-        4<br><br>print(pi)<br>print(answer)<br><br><i># Expected Console Output</i><br><br>>> 3.14... (Then the rest of
-        Pi.)<br>>> 7</p>
       <hr size="5" noshade color="#ffffff">
     </div>
     <div>
