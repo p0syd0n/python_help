@@ -44,7 +44,7 @@
     <div>
       <h1 class='subheadertext' id="WhatisAModule">What is a Module</h1>
       <p class='normaltext'>A module is a chunk of code that someone else made. You can import it, and then use funtions and data that someone else created for yourself. This makes it easier to do things, so that you do do not need to code every little detail yourself.</p>
-      <p class='codetext'>import random<br>from random import *<br><br>print(random())<br><br>//Expected Console Output<br><br></i>>> 0.91837452</p>
+      <p class='codetext'><br>from random import *<br><br>print(random())<br><br>#Expected Console Output<br><br></i>>> 0.91837452</p>
       <hr size="5" noshade color="#ffffff" id="Random">
     </div>
     <div>
@@ -52,6 +52,8 @@
       <p class='normaltext'>This module has many different methods. They mostly serve the purpose of generating random numbers, sometimes with parameters you input, others with pre set parameters. We will have subsection below this that explain the methods found in this module.</p>
       <hr size="5" noshade color="#ffffff" id="Random-Seed()">
       <h1 class='subsubheadertext'>Random<br>Seed()</h1>
+      <p class='normaltext'>The seed() method is used to initialize the random number generator. The random number generator needs a number to start with (a seed value), to be able to generate a random number. By default the random number generator uses the current system time (your computer's time). You can use the seed() method to customize the start number of the random number generator. If you use the same seed value twice you will get the same random number twice. It takes two arguments in the form of intergers. The first on is a, and it is optional. It is te seed value. If it is not given, then your system time will be used. The second aregument is the version. It specifies how to convert the seed into a random number. By default it is two.</p>
+      <p class='codetext'>from random import *<br><br>print(random.seed(a))<br><br>#Expected Console Output<br><br></i>>>> <b>None</b></p>
     </div>
 </body>
 
